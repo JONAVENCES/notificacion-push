@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Enter your description here" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Consulta basica</title>
+</head>
+
+<body>
+
+  <script src="js/push.min.js"></script>
+
+  <script>
+    Push.create("HOLA MUNDO!", {
+      body: "HAY MI MADRE EL BICHO",
+      icon: 'img/logo.png',
+      timeout: 4000,
+      onClick: function () {
+        window.focus();
+        this.close();
+      }
+    });
+  </script>
+
+</body>
+
+</html>
