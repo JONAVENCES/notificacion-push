@@ -15,17 +15,23 @@
   <script src="js/push.min.js"></script>
 
   <script>
-    Push.create("HOLA MUNDO!", {
-      body: "HAY MI MADRE EL BICHO",
-      icon: 'img/logo.png',
-      timeout: 4000,
-      onClick: function () {
-        window.focus();
-        this.close();
-      }
-    });
+    function boton() {
+      Push.create("HOLA MUNDO!", {
+        body: "HAY MI MADRE EL BICHO",
+        icon: 'img/logo.png',
+        timeout: 4000,
+        onClick: function () {
+          window.focus();
+          this.close();
+        }
+      });
+    }
+
   </script>
 
+  <button onclick="boton()">
+    click
+  </button>
 </body>
 
 </html>
